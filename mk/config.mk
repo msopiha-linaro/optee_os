@@ -472,7 +472,7 @@ CFG_CRYPTOLIB_DIR ?= core/lib/libtomcrypt
 # without ASN.1 around the hash.
 ifeq ($(CFG_CRYPTOLIB_NAME),tomcrypt)
 CFG_CRYPTO_RSASSA_NA1 ?= y
-CFG_CORE_MBEDTLS_MPI ?= y
+CFG_CORE_MBEDTLS_MPI ?= n
 endif
 
 # Enable virtualization support. OP-TEE will not work without compatible
